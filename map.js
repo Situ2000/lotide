@@ -4,6 +4,7 @@ const words = ["ground", "control", "to", "major", "tom"];
 
 const map = function(array, callback) {
   const results = [];
+  // Modify each item in the array by the callback function
   for (let item of array) {
     results.push(callback(item));
   }
