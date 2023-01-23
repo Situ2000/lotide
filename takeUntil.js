@@ -2,6 +2,8 @@ const assertArraysEqual = require("./assertArraysEqual");
 
 const takeUntil = (array, callback) => {
   const results = [];
+
+  // Return all the items before the item that pass the callback function
   for (let i = 0; i < array.length; i++) {
     if (callback(array[i])) {
       return results;
