@@ -1,6 +1,7 @@
 const assertEqual = require('./assertEqual');
 
 const findKey = (object, callback) => {
+  // Find the first key that its value can pass the callback function
   for (let key in object) {
     if (callback(object[key])) {
       return key;
